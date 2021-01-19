@@ -1,0 +1,22 @@
+<div class="w-full border-b-2 border-t-2 flex items-center justify-between px-8 py-4">
+    <img src="../../assets/images/logiwa.png" alt="logo" />
+    <a href="/logout" class="text-md ">LogOut</a>
+</div>
+<div class="w-full flex items-center">
+    <div class="mx-auto shadow-lg p-8 rounded-lg">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Source</th>
+                <th>Type</th>
+            </tr>
+            <tr *ngFor="let row of data">
+                <td>{{ row.id }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.src }}</td>
+                <td>{{ row.type }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
